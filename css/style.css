@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Balthazar", serif;
+}
+
+body {
+  background-color: #efa9a9;
+}
+
+header {
+  background-color: bisque;
+  height: 5rem;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  height: 5rem;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+}
+header #navbar .nav-list .nav-item a:hover {
+  color: #777;
+  transition: color 0.3s;
+}
+
+header #navbar .hamburguer-menu {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  header #navbar .hamburguer-menu {
+    display: block;
+  }
+  header #navbar .nav-list {
+    display: none;
+  }
+}
+
+/* Section Banner */
+main {
+  margin-top: 6rem;
+}
+
+main #banner {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 75rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+main #banner .banner-content .banner-content-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1rem;
+  margin-bottom: 2rem;
+}
+
+main #banner .banner-content .banner-content-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 36rem;
+  margin-bottom: 3rem;
+}
+
+main #banner .banner-content .banner-content-btn {
+  background-color: salmon;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 8px 24px;
+  border: none;
+  cursor: pointer;
+}
+main #banner .banner-content .banner-content-btn:hover {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+main #banner .banner-image {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 18.5rem;
+}
+
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  main #banner .banner-content {
+    text-align: center;
+  }
+}
+
+/* Section Posts */
+section#posts {
+  margin-top: 4rem;
+  background-color: bisque;
+  padding: 0 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#posts .posts-content {
+  padding: 0 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+#posts .posts-content .posts-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#posts .posts-content .posts-content-header .section-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#posts .posts-content .posts-cards .post-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  flex: 1;
+  margin-bottom: 1.3rem;
+}
+
+#posts .posts-content .posts-cards .post-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#posts .posts-content .posts-cards .post-card span {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+#posts .posts-content .posts-cards .post-card p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+@media (max-width: 740px) {
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
+}

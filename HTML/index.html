@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A simple HTML document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a class="nav-brand">Guilherme Pires Cardozo</a>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburguer-menu">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="10" y="32.4" width="28" height="3.2" fill="black" />
+            <rect x="10" y="22.4" width="28" height="3.2" fill="black" />
+            <rect x="10" y="12.4" width="28" height="3.2" fill="black" />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="banner">
+        <div class="banner-content">
+          <h1 class="banner-content-title">
+            Olá, Meu nome é Guilherme Pires Cardozo
+          </h1>
+          <p class="banner-content-subtitle">
+            Sou um desenvolvedor web em desenvolvimento. Crio sites funcionais e
+            tento deixá-los bonitos. &#128517;
+          </p>
+          <button
+            class="banner-content-btn"
+            onclick="
+              window.open(
+                'https://drive.google.com/file/d/14QePFOKPQ3dSdDLmfGuDrVYx2DFhYFjW/view?usp=sharing',
+                '_blank',
+              )
+            "
+          >
+            CV
+          </button>
+          <button
+            class="banner-content-btn"
+            onclick="
+              window.open('https://www.linkedin.com/in/gui-cardozo', '_blank')
+            "
+          >
+            LinkedIn
+          </button>
+          <button
+            class="banner-content-btn"
+            onclick="window.open('https://github.com/MrZonyn', '_blank')"
+          >
+            Github
+          </button>
+        </div>
+        <img
+          class="banner-image"
+          src="https://avatars.githubusercontent.com/u/53999309?v=4"
+          alt="Guilherme Cardozo"
+        />
+      </section>
+
+      <section id="posts">
+        <div class="posts-content">
+          <div class="posts-content-header">
+            <h2 class="section-title">Resumo Profissional</h2>
+          </div>
+          <div class="posts-cards">
+            <div class="post-card">
+              <h3>
+                Tecnico em Manutenção T.I. <br />
+                Mega Midia Group
+              </h3>
+              <span>Dez/2023 - Out/2025</span>
+              <p>
+                <strong>Manutenção</strong> e <strong>configuração</strong> de
+                CPUs, placas de microprocessamento (<i>Raspberry</i> e
+                <i>Orange</i>) e aparelhos android TV Box; Cooperação direta com
+                a equipe de <strong>suporte técnico</strong> e
+                <strong>logística</strong>, organizando e auxiliando no envio de
+                equipamentos.
+              </p>
+            </div>
+            <div class="post-card">
+              <h3>
+                Professor de Informática <br />
+                Jumper Cursos
+              </h3>
+              <span>Jan/2023 - Dez/2023</span>
+              <p>
+                Atuei como professor de
+                <b>manutenção</b> e <b>montagem de computadores desktop</b>,
+                apresentando conteúdo teórico e prático. Também como professor
+                de <strong>informática básica</strong>, apresentando
+                <b>Pacote Office</b>; Boas práticas no sistema operacional
+                <b>Windows</b> com dicas para melhor desempenho e utilidades
+                gerais;
+              </p>
+            </div>
+            <div class="post-card">
+              <h3>
+                Estágio em Desenvolvimento Web <br />
+                UTFPR
+              </h3>
+              <span>Jun/2022 - Dez/2022</span>
+              <p>
+                <strong>Identificação e análise de problemas</strong> em
+                aplicações web obtendo as melhores soluções utilizando
+                <b>Angular</b>;
+                <strong>Mapeamento do design do sistema</strong> e auxílio na
+                implementação de features utilizando <b>Svelte</b>; Colaboração
+                com diversos departamentos da instituição no planejamento e na
+                implementação de novos <b>planos de melhoria e mudanças</b> em
+                aplicações web;
+                <strong>Criação de documentos e planilhas</strong> utilizando
+                Microsoft Word e Excel para auxiliar na produção de comunicações
+                e relatórios técnicos gerenciais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

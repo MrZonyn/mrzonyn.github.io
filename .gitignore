@@ -1,0 +1,31 @@
+# Sistema / OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.suo
+*.user
+*.userosscache
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build output
+dist/
+build/
+
+# Environment
+.env
+
+# Logs
+logs/
+*.log
+
+# Mac
+Icon?
